@@ -1,0 +1,73 @@
+{
+    "@context": {
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "adms": "http://www.w3.org/ns/adms#",
+        "dcterms": "http://purl.org/dc/terms#"
+    },
+    "@id": "https://ons.gov.uk/dataset/gas/edition/2024/version/1.csv",
+    "@type": "dcat:Distribution",
+    "dcat:title": "System Average Price (SAP) of gas",
+    "dcat:downloadURL": "https://ons.gov.uk/dataset/gas/edition/2024/version/1.csv",
+    "dcat:mediaType": "text/csv",
+    "dcat:isDistributionOf": {
+        "@id": "https://ons.gov.uk/dataset/gas/edition/2024/version/1",
+        "@type": "dcat:Dataset",
+        "adms:versionNotes": "Initial release",
+        "dcat:isVersionOf": {
+            "@id": "https://ons.gov.uk/dataset/gas/edition/2024",
+            "@type": "dcat:Edition",
+            "dcterms:title": "System Average Price (SAP) of gas",
+            "dcterms:abstract": "Daily data showing System Average Price (SAP) of gas, and rolling seven-day average, traded in Great Britain over the On-the-Day Commodity Market (OCM). These are official statistics in development. Source: National Gas Transmission.",
+            "dcterms:description": "Daily data showing System Average Price (SAP) of gas, and rolling seven-day average, traded in Great Britain over the On-the-Day Commodity Market (OCM). These are official statistics in development. Source: National Gas Transmission.",
+            "dcterms:publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+            "dcterms:license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+            "dcterms:creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+            "dcat:contactPoint": "realtime.indicators@ons.gov.uk",
+            "dcterms:issued": "2024-07-05T09:30:00",
+            "dcterms:modified": "2024-07-05T09:30:00",
+            "dcat:keyword": "",
+            "dcat:theme": "https://www.ons.gov.uk/economy/economicoutputandproductivity",
+            "dcterms:spatial": "",
+            "dcterms:tenporal": ""
+        },
+        "tableSchema": {
+            "columns": [
+                {
+                    "name": "period_code",
+                    "title": "Period Code",
+                    "datatype": "string"
+                },
+                {
+                    "name": "period_label",
+                    "title": "Period Label",
+                    "datatype": "string"
+                },
+                {
+                    "name": "period_type",
+                    "title": "Period Type",
+                    "datatype": "string"
+                },
+                {
+                    "name": "geography_code",
+                    "title": "Geography Code",
+                    "datatype": "string"
+                },
+                {
+                    "name": "observation",
+                    "title": "Observation",
+                    "datatype": "decimal"
+                },
+                {
+                    "name": "measure",
+                    "title": "Measure",
+                    "datatype": "string"
+                },
+                {
+                    "name": "unit",
+                    "title": "Unit",
+                    "datatype": "string"
+                }
+            ]
+        }
+    }
+}
